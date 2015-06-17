@@ -1,0 +1,67 @@
+---
+title       : Poem Sentiment Analyzer
+subtitle    : Application for quantifying the mood of your favorite lyrics
+author      : Mike I.
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+<style>
+strong {
+  font-weight: bold;
+}
+</style>
+
+## Positive, neutral or negative?
+
+Analyze what mood your text has with this magnificent app.  
+https://sidew4ys.shinyapps.io/courseproject  
+  
+### But the main point is not that...
+
+I actually did it to tell you about more important things.
+
+--- 
+
+## Do machines understand human speech?
+
+What time it is? It was **`r Sys.time()`** at the time of slidifying this presentation.  
+  
+It has been **`r as.numeric(format(Sys.time(), "%Y")) - 1950` years** since Alan Turing published an article in Mind, on the topic of artificial intelligence in which the concept of what is now known as the Turing test was introduced.  
+  
+AI is not created as of yet, but some sort of natural language processing is widespread nowadays. You are using it every day without even noticing.  
+  
+This sentiment analysis application shows that you can now use the same technologies with minimal effort.
+
+---
+
+## What is it made of?
+
+- R **qdap** package allows for estimating the sentiment of given bodies of text in English.
+- Text cleaning is required before these algorithms can be used: all punctuation removed, lower() applied etc.
+
+### There are other tools as well...
+
+- Packages such as **Rstem** and **SnowballC** for bringing words (not only English!) to their infinitive form - it helps computer a lot to understand what text is about.
+- **lda** and **LDAvis** for topic modeling (detecting topics in arbitrary texts).
+- **NLTK** library in Python, which is the most powerful thing for text processing, as far as I know. Also supports multiple languages.
+- Packages such as Python's **nlpnet**, which allows to detect (using neural networks and independent of language) which words are related to which.
+- Open-source speech-to-text processors such as **kaldi**. Also independent of language, thanks to neural networks. (But requires pre-training).
+  
+And many, many more.
+
+---
+
+## But back to our Shiny application
+
+- There isn't much to talk about it, because it's very simple.
+- But I hope you smiled
+- And also learned something new
+
+
+

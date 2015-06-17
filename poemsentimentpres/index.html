@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Poem Sentiment Analyzer</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Poem Sentiment Analyzer">
+  <meta name="author" content="Mike I.">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Poem Sentiment Analyzer</h1>
+    <h2>Application for quantifying the mood of your favorite lyrics</h2>
+    <p>Mike I.<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <article data-timings="">
+    <style>
+strong {
+  font-weight: bold;
+}
+</style>
+
+<h2>Positive, neutral or negative?</h2>
+
+<p>Analyze what mood your text has with this magnificent app.<br>
+<a href="https://sidew4ys.shinyapps.io/courseproject">https://sidew4ys.shinyapps.io/courseproject</a>  </p>
+
+<h3>But the main point is not that...</h3>
+
+<p>I actually did it to tell you about more important things.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Do machines understand human speech?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>What time it is? It was <strong>2015-06-17 21:26:40</strong> at the time of slidifying this presentation.  </p>
+
+<p>It has been <strong>65 years</strong> since Alan Turing published an article in Mind, on the topic of artificial intelligence in which the concept of what is now known as the Turing test was introduced.  </p>
+
+<p>AI is not created as of yet, but some sort of natural language processing is widespread nowadays. You are using it every day without even noticing.  </p>
+
+<p>This sentiment analysis application shows that you can now use the same technologies with minimal effort.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>What is it made of?</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>R <strong>qdap</strong> package allows for estimating the sentiment of given bodies of text in English.</li>
+<li>Text cleaning is required before these algorithms can be used: all punctuation removed, lower() applied etc.</li>
+</ul>
+
+<h3>There are other tools as well...</h3>
+
+<ul>
+<li>Packages such as <strong>Rstem</strong> and <strong>SnowballC</strong> for bringing words (not only English!) to their infinitive form - it helps computer a lot to understand what text is about.</li>
+<li><strong>lda</strong> and <strong>LDAvis</strong> for topic modeling (detecting topics in arbitrary texts).</li>
+<li><strong>NLTK</strong> library in Python, which is the most powerful thing for text processing, as far as I know. Also supports multiple languages.</li>
+<li>Packages such as Python&#39;s <strong>nlpnet</strong>, which allows to detect (using neural networks and independent of language) which words are related to which.</li>
+<li>Open-source speech-to-text processors such as <strong>kaldi</strong>. Also independent of language, thanks to neural networks. (But requires pre-training).</li>
+</ul>
+
+<p>And many, many more.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>But back to our Shiny application</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>There isn&#39;t much to talk about it, because it&#39;s very simple.</li>
+<li>But I hope you smiled</li>
+<li>And also learned something new</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title=''>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Do machines understand human speech?'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='What is it made of?'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='But back to our Shiny application'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
